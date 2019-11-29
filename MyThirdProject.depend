@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1575019323 source:d:\devt\formationc\mythirdproject\main.cpp
+	<iostream>
+	"Player.h"
+	"algorithm"
+
+1575018779 d:\devt\formationc\mythirdproject\include\player.h
+	<iostream>
+	<vector>
+
+1575018706 source:d:\devt\formationc\mythirdproject\src\player.cpp
+	"Player.h"
+
