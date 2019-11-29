@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-// State Design pattern => faire une machine à état avec des objets
+// State Design pattern => faire une machine ï¿½ ï¿½tat avec des objets
 // on aura une classe pour chaque etat
 int main()
 {
@@ -21,10 +21,24 @@ int main()
     while (input != "exit")
     {
         cin >> input;
-        cout  << input << endl;
+        try
+        {
+            if (input=="play")
+            player->Getstate()->onPlay();
+            else if (input=="stop")
+                player->Getstate()->onStop();
+            else if (input=="pause")
+                player->Getstate()->onStop();
+            else if (input=="exit")
+                break;
+            else
+                throw "unknown command";
+        }
+        catch(char const* errorMessage)
+        {
+            cout << "error " << errorMessage << endl;
+        }
     }
-    return 0;
-
     delete player;
 
 }
