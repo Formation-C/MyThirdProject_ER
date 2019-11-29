@@ -18,16 +18,27 @@ int main()
             cout << trackName << endl;}
     );
     string input;
-//    while (input != "exit")
-//    {
-//        cin >> input;
-//        cout  << input << endl;
-//    }
-
-
-    player->GetcurrentTrack();
-    player->nextTrack();
-
+    while (input != "exit")
+    {
+        cin >> input;
+        try
+        {
+            if (input=="play")
+            player->Getstate()->onPlay();
+            else if (input=="stop")
+                player->Getstate()->onStop();
+            else if (input=="pause")
+                player->Getstate()->onStop();
+            else if (input=="exit")
+                break;
+            else
+                throw "unknown command";
+        }
+        catch(char const* errorMessage)
+        {
+            cout << "error " << errorMessage << endl;
+        }
+    }
     delete player;
 
     return 0;

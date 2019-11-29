@@ -15,6 +15,7 @@ class StoppedState : public State
 
         void onPlay();
         void onStop();
+        void onPause();
 
     protected:
 

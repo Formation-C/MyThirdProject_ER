@@ -13,6 +13,7 @@ class State
 
         virtual void onPlay() = 0;
         virtual void onStop() = 0;
+        virtual void onPause() = 0;
 
         /** Access player
          * \return The current value of player
