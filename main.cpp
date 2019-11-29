@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Player.h"
 #include"algorithm"
+#include "memory"
 
 using namespace std;
 
@@ -10,7 +11,10 @@ using namespace std;
 // on aura une classe pour chaque etat
 int main()
 {
-    Player* player =new Player();
+    //Player* player =new Player();
+    //utilisation de unique_ptr pour ne pas faire le delete de player à la fin
+    // voir aussi shared_ptr and weak_ptr
+    std::unique_ptr<Player> player(new Player);
     for_each(
          player->GettracksList()->begin(),
          player->GettracksList()->end(),
@@ -39,7 +43,7 @@ int main()
             cout << "error " << errorMessage << endl;
         }
     }
-    delete player;
+    //delete player;
 
     return 0;
 }
