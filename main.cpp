@@ -28,7 +28,7 @@ int main()
             else if (input=="stop")
                 player->Getstate()->onStop();
             else if (input=="pause")
-                player->Getstate()->onStop();
+                player->Getstate()->onPause();
             else if (input=="exit")
                 break;
             else
