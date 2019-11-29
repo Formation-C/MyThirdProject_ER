@@ -4,6 +4,7 @@
 	"Player.h"
 	"algorithm"
 
+
 1575020657 d:\devt\formationc\mythirdproject\include\player.h
 	<iostream>
 	<vector>
@@ -13,5 +14,6 @@
 	"Player.h"
 
 1575020578 d:\devt\formationc\mythirdproject\include\state.h
+
 	"Player.h"
 

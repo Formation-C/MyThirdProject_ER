@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+
 class State;
 #include "State.h"
 
@@ -42,11 +43,13 @@ class Player
         /** Access state
          * \return The current value of state
          */
+
         State *Getstate() { return state; }
         /** Set state
          * \param val New value to set
          */
         void Setstate(State *val) { state = val; }
+
 
     protected:
 
@@ -54,7 +57,9 @@ class Player
         bool playing; //!< Member variable "playing"
         std::vector <std::string> *tracksList; //!< Member variable "tracksList"
         int currentTrack; //!< Member variable "currentTrack"
+
         State* state; //!< Member variable "state"
+
 };
 
 #endif // PLAYER_H
