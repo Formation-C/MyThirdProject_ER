@@ -8,7 +8,7 @@ int main()
     while (input != "exit")
     {
         cin >> input;
-        cout << input << endl;
+        cout  << input << endl;
     }
     return 0;
 }
