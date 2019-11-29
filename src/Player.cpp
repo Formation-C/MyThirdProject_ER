@@ -1,5 +1,4 @@
 #include "Player.h"
-#include <string>
 
 using namespace std;
 
@@ -13,7 +12,7 @@ Player::Player()
 
     for (int ii=0;ii<12;ii++)
     {
-        tracksList->push_back(cout << "Track " + std::to_string(ii));
+        tracksList->push_back("Track " + std::to_string(ii));
     }
 }
 
