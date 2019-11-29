@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1575023610 source:d:\devt\formationc\mythirdproject\main.cpp
+1575027909 source:d:\devt\formationc\mythirdproject\main.cpp
 	<iostream>
 	"Player.h"
 	"algorithm"
 
-1575023252 d:\devt\formationc\mythirdproject\include\player.h
+1575024909 d:\devt\formationc\mythirdproject\include\player.h
 	<iostream>
 	<vector>
 	"State.h"
@@ -14,15 +14,32 @@
 	"State.h"
 	"StoppedState.h"
 
-1575024622 d:\devt\formationc\mythirdproject\include\state.h
+1575026340 d:\devt\formationc\mythirdproject\include\state.h
 	"Player.h"
 
 1575020333 source:d:\devt\formationc\mythirdproject\src\state.cpp
 	"State.h"
 
-1575024003 source:d:\devt\formationc\mythirdproject\src\stoppedstate.cpp
+1575027732 source:d:\devt\formationc\mythirdproject\src\stoppedstate.cpp
 	"StoppedState.h"
+	"PlayingState.h"
 
-1575024708 d:\devt\formationc\mythirdproject\include\stoppedstate.h
+1575026340 d:\devt\formationc\mythirdproject\include\stoppedstate.h
+	<State.h>
+
+1575026340 d:\devt\formationc\mythirdproject\include\playingstate.h
+	<State.h>
+
+1575027991 source:d:\devt\formationc\mythirdproject\src\playingstate.cpp
+	"PlayingState.h"
+	"StoppedState.h"
+	"PauseState.h"
+
+1575027340 source:d:\devt\formationc\mythirdproject\src\pausestate.cpp
+	"PauseState.h"
+	"StoppedState.h"
+	"PlayingState.h"
+
+1575027311 d:\devt\formationc\mythirdproject\include\pausestate.h
 	<State.h>
 
