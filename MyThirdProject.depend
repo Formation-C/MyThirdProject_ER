@@ -4,10 +4,16 @@
 	"Player.h"
 	"algorithm"
 
-1575018779 d:\devt\formationc\mythirdproject\include\player.h
+
+1575020657 d:\devt\formationc\mythirdproject\include\player.h
 	<iostream>
 	<vector>
+	"State.h"
 
-1575018706 source:d:\devt\formationc\mythirdproject\src\player.cpp
+1575020068 source:d:\devt\formationc\mythirdproject\src\player.cpp
+	"Player.h"
+
+1575020578 d:\devt\formationc\mythirdproject\include\state.h
+
 	"Player.h"
 
