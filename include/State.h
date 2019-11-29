@@ -3,8 +3,6 @@
 
 class Player;
 
-#include "Player.h"
-
 class State
 {
     public:
@@ -12,6 +10,9 @@ class State
         State(Player *);
         /** Default destructor */
         virtual ~State();
+
+        virtual void onPlay() = 0;
+        virtual void onStop() = 0;
 
         /** Access player
          * \return The current value of player
@@ -27,5 +28,7 @@ class State
 
     private:
 };
+
+#include "Player.h"
 
 #endif // STATE_H

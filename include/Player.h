@@ -48,6 +48,11 @@ class Player
          */
         void Setstate(State *val) { state = val; }
 
+        std::string nextTrack();
+        std::string previousTrack();
+        std::string startPlayBack();
+        std::string Pause();
+        std::string Stop();
     protected:
 
     private:
@@ -56,5 +61,6 @@ class Player
         int currentTrack; //!< Member variable "currentTrack"
         State* state; //!< Member variable "state"
 };
+
 
 #endif // PLAYER_H

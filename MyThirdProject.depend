@@ -1,17 +1,28 @@
 # depslib dependency file v1.0
-1575019323 source:d:\devt\formationc\mythirdproject\main.cpp
+1575023610 source:d:\devt\formationc\mythirdproject\main.cpp
 	<iostream>
 	"Player.h"
 	"algorithm"
 
-1575020657 d:\devt\formationc\mythirdproject\include\player.h
+1575023252 d:\devt\formationc\mythirdproject\include\player.h
 	<iostream>
 	<vector>
 	"State.h"
 
-1575020068 source:d:\devt\formationc\mythirdproject\src\player.cpp
+1575024096 source:d:\devt\formationc\mythirdproject\src\player.cpp
+	"Player.h"
+	"State.h"
+	"StoppedState.h"
+
+1575024622 d:\devt\formationc\mythirdproject\include\state.h
 	"Player.h"
 
-1575020578 d:\devt\formationc\mythirdproject\include\state.h
-	"Player.h"
+1575020333 source:d:\devt\formationc\mythirdproject\src\state.cpp
+	"State.h"
+
+1575024003 source:d:\devt\formationc\mythirdproject\src\stoppedstate.cpp
+	"StoppedState.h"
+
+1575024708 d:\devt\formationc\mythirdproject\include\stoppedstate.h
+	<State.h>
 

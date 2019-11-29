@@ -18,13 +18,17 @@ int main()
             cout << trackName << endl;}
     );
     string input;
-    while (input != "exit")
-    {
-        cin >> input;
-        cout  << input << endl;
-    }
-    return 0;
+//    while (input != "exit")
+//    {
+//        cin >> input;
+//        cout  << input << endl;
+//    }
+
+
+    player->GetcurrentTrack();
+    player->nextTrack();
 
     delete player;
 
+    return 0;
 }
